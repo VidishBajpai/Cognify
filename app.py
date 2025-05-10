@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import joblib 
 import streamlit.components.v1 as components
 
-model = joblib.load('Cognitive_model.pkl')  
+model = joblib.load('Cognitive_Model.pkl')  
 df = pd.read_csv('Cleaned_Cognitive.csv')  
 
 st.header("🧠 Welcome to Cognify")
