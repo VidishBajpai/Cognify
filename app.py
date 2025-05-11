@@ -9,7 +9,7 @@ import streamlit.components.v1 as components
 model = joblib.load('Cognitive_Model.pkl')  
 df = pd.read_csv('Cleaned_Cognitive.csv')  
 
-st.title("Cognify 🧠 ")
+st.title("🧠 Cognify ")
 st.caption("A Project by Vidish Bajpai.")
 st.write("""
     Cognify is an intelligent tool designed to analyze and enhance human cognitive performance. Powered by data science and AI, 
