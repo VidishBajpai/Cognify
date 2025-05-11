@@ -255,12 +255,12 @@ if st.button("Calculate Cognitive Score"):
     else:
       st.success("You're doing great! Keep maintaining your healthy habits 😇")
       
-
+if st.button("would you like to get your result pdf? "):
     email = st.text_input("Enter your email")
     name = st.text_input("Enter your name")
 
-    # Assume cognitive score is calculated already
-    score = 86
+    
+    score = 70
 
     if st.button("Send Report via Email"):
         payload = {
