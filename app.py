@@ -22,7 +22,7 @@ st.write("""
 Cognitive Score measures how well the brain performs tasks that require thinking, learning, and understanding.
 """)
 
-dataset = st.toggle("Dataset")
+dataset = st.toggle("View Dataset")
 if dataset:
     st.dataframe(df)
     fig, ax = plt.subplots()
