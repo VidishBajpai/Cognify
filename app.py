@@ -10,6 +10,7 @@ model = joblib.load('Cognitive_Model.pkl')
 df = pd.read_csv('Cleaned_Cognitive.csv')  
 
 st.title("🧠 Cognify ")
+st.write("A Project by Vidish Bajpai")
 st.header("🧠 What is Cognitive Performance?")
 st.write("""
     Cognify is an intelligent tool designed to analyze and enhance human cognitive performance. Powered by data science and AI, 
@@ -252,5 +253,3 @@ if st.button("Calculate Cognitive Score"):
     else:
       st.success("You're doing great! Keep maintaining your healthy habits 😇")
 
-
-st.write("A Project by Vidish Bajpai")
