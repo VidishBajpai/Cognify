@@ -10,8 +10,12 @@ model = joblib.load('Cognitive_Model.pkl')
 df = pd.read_csv('Cleaned_Cognitive.csv')  
 
 st.title("🧠 Cognify ")
+<<<<<<< HEAD
 st.caption("A Project by Vidish Bajpai.")
 st.header("🧠 What is Cognitive Performance?")
+=======
+st.write("A Project by Vidish Bajpai")
+>>>>>>> d776f26 (Save Changes)
 st.write("""
     Cognify is an intelligent tool designed to analyze and enhance human cognitive performance. Powered by data science and AI, 
     this interactive platform evaluates key factors like sleep patterns, stress levels, screen time, memory scores, your diet, 
