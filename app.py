@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import joblib 
 import streamlit.components.v1 as components
-import requests
+
 
 model = joblib.load('Cognitive_Model.pkl')  
 df = pd.read_csv('Cleaned_Cognitive.csv')  
