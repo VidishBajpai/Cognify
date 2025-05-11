@@ -15,9 +15,6 @@ st.write("""
     this interactive platform evaluates key factors like sleep patterns, stress levels, screen time, memory scores, your diet, 
     your exercise frequency to generate personalized cognitive insights.
 
-    Whether you're a student, a professional, or just curious about your mental sharpness, 
-    Cognify offers a simple way to understand how daily habits affect your brain's performance — and how to improve it.
-
 🚀 Why Cognify?
 
 1. Understand your cognitive health in real-time.
