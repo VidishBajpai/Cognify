@@ -23,7 +23,7 @@ st.write("""
 3. Discover how to make better lifestyle choices for a sharper mind.
 """ 
 )
-st.header("🧠 Welcome to Cognify")
+st.header("🧠 What is Cognitive Performance?")
 st.write("""
     Cognitive performance refers to the efficiency and effectiveness of mental processes such as:
 
