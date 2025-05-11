@@ -5,13 +5,15 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import joblib 
 import streamlit.components.v1 as components
+import requests
 
 model = joblib.load('Cognitive_Model.pkl')  
 df = pd.read_csv('Cleaned_Cognitive.csv')  
 
 st.title("🧠 Cognify ")
-st.write("A Project by Vidish Bajpai")
-st.header("🧠 What is Cognitive Performance?")
+st.markdown("- A Project by Vidish Bajpai ✨")
+st.write("")
+st.write("")
 st.write("""
     Cognify is an intelligent tool designed to analyze and enhance human cognitive performance. Powered by data science and AI, 
     this interactive platform evaluates key factors like sleep patterns, stress levels, screen time, memory scores, your diet, 
@@ -24,7 +26,7 @@ st.write("""
 3. Discover how to make better lifestyle choices for a sharper mind.
 """ 
 )
-
+st.header("🧠 What is Cognitive Performance?")
 st.write("""
     Cognitive performance refers to the efficiency and effectiveness of mental processes such as:
 
@@ -253,3 +255,24 @@ if st.button("Calculate Cognitive Score"):
     else:
       st.success("You're doing great! Keep maintaining your healthy habits 😇")
 
+
+email = st.text_input("Enter your email")
+name = st.text_input("Enter your name")
+
+# Assume cognitive score is calculated already
+score = 70
+
+if st.button("Send Report via Email"):
+    payload = {
+        "email": email,
+        "name": name,
+        "result": score
+    }
+    try:
+        response = requests.post("http://127.0.0.1:5000/send_report", json=payload)
+        if response.status_code == 200:
+            st.success("Report sent to your email!")
+        else:
+            st.error("Failed to send email.")
+    except Exception as e:
+        st.error(f"Error: {e}")
