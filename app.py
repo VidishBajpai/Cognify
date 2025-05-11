@@ -255,28 +255,3 @@ if st.button("Calculate Cognitive Score"):
     else:
       st.success("You're doing great! Keep maintaining your healthy habits 😇")
       
-if st.button("would you like to get your result pdf? "):
-    email = st.text_input("Enter your email")
-    name = st.text_input("Enter your name")
-
-    
-    score = 70
-
-    if st.button("Send Report via Email"):
-        payload = {
-            "email": email,
-            "name": name,
-            "result": score
-        }
-        try:
-            response = requests.post("http://127.0.0.1:5000/send_report", json=payload)
-            if response.status_code == 200:
-                st.success("Report sent to your email!")
-            else:
-                st.error("Failed to send email.")
-        except Exception as e:
-            st.error(f"Error: {e}")
-
-
-
-
