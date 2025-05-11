@@ -9,8 +9,21 @@ import streamlit.components.v1 as components
 model = joblib.load('Cognitive_Model.pkl')  
 df = pd.read_csv('Cleaned_Cognitive.csv')  
 
-st.title("Cognify 🧠")
-st.caption("A Project by Vidish Bajpai")
+st.title("Cognify 🧠 - A Project by Vidish Bajpai.")
+st.write("""
+    Cognify is an intelligent tool designed to analyze and enhance human cognitive performance. Powered by data science and AI, 
+    this interactive platform evaluates key factors like sleep patterns, stress levels, screen time, memory scores, your diet, 
+    your exercise frequency to generate personalized cognitive insights.
+
+    Whether you're a student, a professional, or just curious about your mental sharpness, Cognify offers a simple way to understand how daily habits affect your brain's performance — and how to improve it.
+
+🚀 Why Cognify?
+
+1. Understand your cognitive health in real-time.
+2. Get data-driven feedback based on your inputs.
+3. Discover how to make better lifestyle choices for a sharper mind.
+""" 
+)
 st.header("🧠 Welcome to Cognify")
 st.write("""
     Cognitive performance refers to the efficiency and effectiveness of mental processes such as:
