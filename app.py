@@ -9,6 +9,9 @@ import streamlit.components.v1 as components
 model = joblib.load('Cognitive_Model.pkl')  
 df = pd.read_csv('Cleaned_Cognitive.csv')  
 
+st.title("Cognify")
+st.caption("A Project by Vidish Bajpai")
+
 st.header("🧠 Welcome to Cognify")
 st.write("""
     Cognitive performance refers to the efficiency and effectiveness of mental processes such as:
